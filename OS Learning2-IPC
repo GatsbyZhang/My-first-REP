@@ -1,0 +1,12 @@
+IPC:inter process communication
+IPC technique deals with three problems:
+	1:passing message from one process to the other process;
+	2:keep the proper order of different processes;
+	3:deal with the contradiction between processes.
+	
+race condition: 竞争条件，多个进程读写某些共享数据，由于执行顺序的不同导致最后的数据结果不同。这一问题的来源是内存、文件、以及其他资源的共享，避免的关键是要使进程之间互斥（mutual exclusion），即某一时刻只有单独的进程接触到共享文件。这就涉及到临界区（critical region,对共享内存进行访问的程序片段）的概念，如果进程之间不同时处于临界区，就避免了竞争条件。
+	
+	
+	
+
+	
